@@ -4,15 +4,21 @@
   document.body.classList.remove("no-js");
 
   var WHATSAPP_NUMBER = "543515155999";
+  var reduceMotion = window.matchMedia("(max-width: 760px), (prefers-reduced-motion: reduce)").matches;
 
   /* -----------------------------------------------------------------
      1. Navbar
      ----------------------------------------------------------------- */
   var nav = document.getElementById("nav");
 
+  var navScrolled = false;
+
   function onScroll() {
     if (!nav) return;
-    nav.classList.toggle("scrolled", window.scrollY > 24);
+    var shouldScroll = window.scrollY > 24;
+    if (shouldScroll === navScrolled) return;
+    navScrolled = shouldScroll;
+    nav.classList.toggle("scrolled", shouldScroll);
   }
 
   window.addEventListener("scroll", onScroll, { passive: true });
@@ -78,7 +84,11 @@
      ----------------------------------------------------------------- */
   var reveals = document.querySelectorAll(".reveal");
 
-  if ("IntersectionObserver" in window && reveals.length) {
+  if (reduceMotion && reveals.length) {
+    reveals.forEach(function (el) {
+      el.classList.add("is-visible");
+    });
+  } else if ("IntersectionObserver" in window && reveals.length) {
     var observer = new IntersectionObserver(
       function (entries, obs) {
         entries.forEach(function (entry) {
@@ -125,7 +135,7 @@
     requestAnimationFrame(step);
   }
 
-  if (counters.length) {
+  if (counters.length && !reduceMotion) {
     if ("IntersectionObserver" in window) {
       var countObserver = new IntersectionObserver(
         function (entries, obs) {
