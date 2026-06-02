@@ -1,0 +1,19 @@
+{
+  "name": "Perfiles Americanos",
+  "short_name": "Perfiles Am.",
+  "description": "Perfiles de aluminio y accesorios para ventanas y puertas en Córdoba.",
+  "lang": "es-AR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#070d1a",
+  "theme_color": "#08101f",
+  "icons": [
+    { "src": "img/logos/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "img/logos/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "img/logos/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "img/logos/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "img/logos/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "img/logos/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

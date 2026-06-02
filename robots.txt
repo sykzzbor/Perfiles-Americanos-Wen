@@ -1,0 +1,6 @@
+# robots.txt - Perfiles Americanos
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://perfilesamericanos.com/sitemap.xml

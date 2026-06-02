@@ -1,0 +1,25 @@
+# Local assistant/tooling state
+.claude/
+.codex/
+.agents/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.temp
+*.log
+
+# Dependency/build outputs if tooling is added later
+node_modules/
+dist/
+build/
+.cache/
+.parcel-cache/
+.vite/
+
+# Environment files
+.env
+.env.*
+!.env.example
