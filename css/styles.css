@@ -1,12 +1,4 @@
-/* ===================================================================
-   PERFILES AMERICANOS — Hoja de estilos
-   Estética: institucional premium · industrial · azul + amarillo
-   Formato: una sola propiedad por línea, un espacio tras los dos puntos
-   =================================================================== */
 
-/* -------------------------------------------------------------------
-   1. Variables
-   ------------------------------------------------------------------- */
 :root {
   /* Marca */
   --blue-deep: #1f54a6;
