@@ -44,9 +44,9 @@
   --wa-dark: #1da851;
 
   /* Tipografías */
-  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
-  --font-body: 'Inter', 'Segoe UI', sans-serif;
-  --font-mono: 'JetBrains Mono', 'Consolas', monospace;
+  --font-display: 'Segoe UI', 'Trebuchet MS', sans-serif;
+  --font-body: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Consolas', 'Liberation Mono', monospace;
 
   /* Radios */
   --r-sm: 8px;
