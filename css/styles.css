@@ -1788,18 +1788,20 @@ h4 {
 }
 
 .amodal__img {
-  aspect-ratio: 4 / 3;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+  padding: 16px;
   border-radius: var(--r-md);
   background: radial-gradient(circle at 50% 38%, #ffffff, #e7ecf5);
 }
 
 .amodal__img img {
-  width: 100%;
-  height: 100%;
-  padding: 20px;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 65vh;
   object-fit: contain;
 }
 
@@ -3301,6 +3303,15 @@ h4 {
 
   .section {
     padding-block: clamp(58px, 14vw, 78px);
+  }
+
+  .amodal__dialog {
+    max-width: 92vw;
+    padding: 20px;
+  }
+
+  .amodal__img img {
+    max-height: 55vh;
   }
 
   .scale__media img {
